@@ -1,0 +1,10 @@
+runtime: python27
+api_version: 1
+threadsafe: false
+
+env_variables:
+  DST_URL: 'http://example.com'
+
+handlers:
+- url: /.*
+  script: main.py
