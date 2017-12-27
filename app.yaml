@@ -6,5 +6,11 @@ env_variables:
   DST_URL: 'http://example.com'
 
 handlers:
+- url: /robots\.txt
+  static_files: robots.txt
+  upload: robots\.txt
+- url: /sitemap\.xml
+  static_files: sitemap.xml
+  upload: sitemap\.xml
 - url: /.*
   script: main.py
